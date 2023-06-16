@@ -1,3 +1,4 @@
+"use client"
 import Link from "next/link"
 
 import { siteConfig } from "@/config/site"
@@ -11,8 +12,8 @@ import { Navegacion } from "@/components/Navegacion"
 
 export default function IndexPage() {
   return (
-    <section className="container grid items-center gap-6 pb-8 pt-6 md:py-10">
-      <Navegacion/>
+    <section className="container grid place-content-center gap-6 pb-8 pt-6 md:py-10">
+      <div className="h-full"><Navegacion/></div>
       <MainInfo/>
       <SiteData/>
       <Proyects/>
