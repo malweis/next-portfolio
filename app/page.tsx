@@ -12,8 +12,11 @@ import { Navegacion } from "@/components/Navegacion"
 
 export default function IndexPage() {
   return (
-    <section className="container grid place-content-center gap-6 pb-8 pt-6 md:py-10">
-      <div className="h-full"><Navegacion/></div>
+    <section className=" w-full grid  ">
+      <div className="h-full  w-full justify-self-center grid place-content-center  heads">
+      
+        <Navegacion className="place-self-center  border-none bg-inherit "/>
+        </div>
       <MainInfo/>
       <SiteData/>
       <Proyects/>

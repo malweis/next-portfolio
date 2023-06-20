@@ -34,11 +34,12 @@ type CardProps = React.ComponentProps<typeof Card>
 
 export function Navegacion({ className, ...props }: CardProps) {
   return (
-    <Card className={cn("w-full border-none", className)} {...props}>
+    <Card className={cn("w-full ", className)} {...props}>
       <CardHeader>
  
       </CardHeader>
-      <CardContent className="grid gap-4">
+      <CardContent className="grid   bg-inherit gap-4">
+        
      <SiteHeader/>
       </CardContent>
       <CardFooter>

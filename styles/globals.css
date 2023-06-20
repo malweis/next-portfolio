@@ -6,6 +6,7 @@
   :root {
     --background: 0 0% 100%;
     --foreground: 222.2 47.4% 11.2%;
+    --headbg:0deg, rgb(98, 71, 170) 0%, rgb(177, 133, 219) 100%;
 
     --muted: 210 40% 96.1%;
     --muted-foreground: 215.4 16.3% 46.9%;
@@ -23,7 +24,7 @@
     --primary-foreground: 210 40% 98%;
 
     --secondary: 210 40% 96.1%;
-    --secondary-foreground: 222.2 47.4% 11.2%;
+    --secondary-foreground: 279 42% 85%;
 
     --accent: 210 40% 96.1%;
     --accent-foreground: 222.2 47.4% 11.2%;
@@ -39,6 +40,7 @@
   .dark {
     --background: 224 71% 4%;
     --foreground: 213 31% 91%;
+    --headbg: 0deg, rgb(98, 71, 170) 0%, rgb(177, 133, 219) 100%;
 
     --muted: 223 47% 11%;
     --muted-foreground: 215.4 16.3% 56.9%;
@@ -78,4 +80,8 @@
     @apply bg-background text-foreground;
     font-feature-settings: "rlig" 1, "calt" 1;
   }
+}
+.heads{
+  background-image: linear-gradient(var(--headbg));
+  filter: url(#noiseFilter);
 }

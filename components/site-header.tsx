@@ -9,11 +9,10 @@ import { ThemeToggle } from "@/components/theme-toggle"
 
 export function SiteHeader() {
   return (
-    <header className="sticky top-0 z-40 w-full  bg-background">
-      <div className="container flex h-full items-center space-x-4 sm:justify-between sm:space-x-0">
-     <MainNav items={siteConfig.mainNav} />   
+    <header className="sticky top-0 z-40 w-full  border-none bg-inherit">
      
-      </div>
+     <MainNav items={siteConfig.mainNav} />   
+ 
     </header>
   )
 }
