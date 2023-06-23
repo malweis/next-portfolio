@@ -91,5 +91,28 @@
   box-shadow: none;
 }
 
+/* slide */ 
 
 
+.slider {
+  height: 100px;
+  margin: auto;
+  overflow: hidden;
+  position: inherit;
+  width: auto;
+}
+
+.slide,
+.slidetrack {
+  animation: scroll 40s linear infinite;
+  display: flex;
+}
+
+@keyframes scroll {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-100%);
+  }
+}
