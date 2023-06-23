@@ -34,7 +34,7 @@ type CardProps = React.ComponentProps<typeof Card>
 
 export function Navegacion({ className, ...props }: CardProps) {
   return (
-    <Card className={cn("w-full ", className)} {...props}>
+    <Card className={cn("w-full headercont", className)} {...props}>
       <CardHeader>
  
       </CardHeader>

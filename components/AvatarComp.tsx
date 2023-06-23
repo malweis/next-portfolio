@@ -11,7 +11,7 @@ export function AvatarComp() {
   const avatarSrc: string = typeof avatarfoto === 'string' ? avatarfoto : avatarfoto.src;
   
   return (
-    <Avatar>
+    <Avatar className="Avimage" >
       <AvatarImage src={avatarSrc} alt="@malweis" />
       <AvatarFallback>Malweis</AvatarFallback>
     </Avatar>
