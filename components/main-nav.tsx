@@ -22,7 +22,7 @@ export function MainNav({ items }: MainNavProps) {
  
         <Link href="/" className="flex items-center space-x-2">
           <Icons.logo className="h-14 w-14 text-secondary" />
-          <span className="inline-block font-bold text-secondary flex">{siteConfig.name}</span>
+          <span className="font-bold text-secondary flex">{siteConfig.name}</span>
         </Link>
         <svg viewBox="0 0 220 220" width={86} height={86} className="fill-secondary" fill="none"><path fillRule="evenodd" clipRule="evenodd" d="M96.587 170.018C95.9376 175.502 91.5229 180 86 180L50 180C44.4772 180 39.9629 175.508 40.3517 169.999C45.2467 100.65 100.65 45.2467 169.999 40.3517C175.508 39.9629 180 44.4772 180 50V86C180 91.5229 175.502 95.9376 170.018 96.587C131.605 101.135 101.135 131.605 96.587 170.018Z" ></path></svg>
         <svg viewBox="0 0 220 220"width={86} height={86}  className="fill-secondary-foreground" fill="none"><path d="M60 110C60 145.277 86.0986 176.957 120.036 182.231C125.493 183.079 130 178.523 130 173V53C130 47.4772 125.501 42.9296 120.024 43.6404C86.0893 48.0449 60 74.727 60 110Z" className="fill-secondary-foreground"></path></svg>

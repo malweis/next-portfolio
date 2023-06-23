@@ -19,7 +19,7 @@ type CardProps = React.ComponentProps<typeof Card>
 
 export function MainInfo({ className, ...props }: CardProps) {
   return (
-    <Card className={cn("w-[380px] bg-background  ", className)} {...props}>
+    <Card className={cn("w-[600px] bg-background cardMainInfo ", className)} {...props}>
       <CardHeader>
      
       </CardHeader>

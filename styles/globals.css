@@ -86,7 +86,7 @@
   width: 90px;
   height: 90px;
 }
-.headercont{
+.headercont, .cardMainInfo{
   border: none;
   box-shadow: none;
 }
