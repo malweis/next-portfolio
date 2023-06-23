@@ -1,7 +1,34 @@
-import React from 'react'
+import { BellRing, Check } from "lucide-react"
 
-export const MainInfo = () => {
+import { cn } from "@/lib/utils"
+import { Button } from "@/components/ui/button"
+import {
+  Card,
+  CardContent,
+  CardDescription,
+  CardFooter,
+  CardHeader,
+  CardTitle,
+} from "@/components/ui/card"
+import { Separator } from "@/components/ui/separator"
+import { Switch } from "@/components/ui/switch"
+import { InfoContent } from "./InfoContent"
+
+
+type CardProps = React.ComponentProps<typeof Card>
+
+export function MainInfo({ className, ...props }: CardProps) {
   return (
-    <div>MainInfo</div>
+    <Card className={cn("w-[380px] bg-background  ", className)} {...props}>
+      <CardHeader>
+     
+      </CardHeader>
+      <CardContent className="grid gap-4 place-items-center">
+      <InfoContent/>
+      </CardContent>
+      <CardFooter>
+       
+      </CardFooter>
+    </Card>
   )
 }

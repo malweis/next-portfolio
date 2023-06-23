@@ -16,8 +16,9 @@ export default function IndexPage() {
       <div className="h-full  w-full justify-self-center grid place-content-center  heads">
       
         <Navegacion className="place-self-center  border-none bg-inherit "/>
+       
         </div>
-      <MainInfo/>
+        <div className="flex justify-center"><MainInfo/></div>
       <SiteData/>
       <Proyects/>
       <ExtraInfo/>
