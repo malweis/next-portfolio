@@ -90,29 +90,7 @@
   border: none;
   box-shadow: none;
 }
-
-/* slide */ 
-
-
-.slider {
-  height: 100px;
-  margin: auto;
-  overflow: hidden;
-  position: inherit;
-  width: auto;
+.imagenes{
+  filter: grayscale(100%) sepia(100%) hue-rotate(270deg);
 }
 
-.slide,
-.slidetrack {
-  animation: scroll 40s linear infinite;
-  display: flex;
-}
-
-@keyframes scroll {
-  0% {
-    transform: translateX(0);
-  }
-  100% {
-    transform: translateX(-100%);
-  }
-}
