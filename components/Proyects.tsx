@@ -5,7 +5,7 @@ import { ProyectCard } from "./ProyectCard"
 export const Proyects = () => {
   return (
     <div className="grid grid-cols-1  gap-4 p-8">
-      {/* bento grid layout */}
+    
       <div className="flex w-full flex-row gap-4">
         <ProyectCard gridLayout={false} />
         <ProyectCard gridLayout={false} />
