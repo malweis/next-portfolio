@@ -67,7 +67,7 @@ export function MainNav({ items }: MainNavProps) {
               </Link>
             )
         )}
-        <ThemeToggle/>
+      
       </div>
     );
   }

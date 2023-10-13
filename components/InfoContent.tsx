@@ -9,7 +9,7 @@ export const InfoContent = () => {
         <div><AvatarComp/></div>
         <div className='text-lg'>Hola! soy Federico </div>
         
-        <div className='text-3xl tracking-tighter text-center leading-6 text'>Programador y Diseñador web, apunto a construir sitios comodos para cualquier tipo de usuario</div>
+        <div className='text-3xl tracking-tighter text-center leading-8 text'>Programador y Diseñador web, apunto a construir sitios comodos para cualquier tipo de usuario</div>
      
     </>
   )
