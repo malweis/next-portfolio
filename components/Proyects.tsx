@@ -1,8 +1,12 @@
 import React from "react"
 
 import { ProyectCard } from "./ProyectCard"
+import { ApolloClient, InMemoryCache } from "@apollo/client"
 
-export const Proyects = () => {
+import { GET_ALL_PROJECTS } from "@/graphql/queries"
+
+
+export const Proyects = ({post}) => {
   return (
     <div className="grid grid-cols-1  gap-4 p-8">
     
@@ -30,4 +34,24 @@ export const Proyects = () => {
       </div>
     </div>
   )
+}
+
+export async function getServerSideProps() {
+  const client = new ApolloClient(
+    {
+      uri: "http://localhost:1337/graphql",
+      cache: new InMemoryCache(),
+    }
+  );
+  const{ data} = await client.query({
+    query : GET_ALL_PROJECTS
+  
+})
+  
+  return {
+    props: {
+      proyectos : data.proyectos.data
+    }
+  }
+
 }
