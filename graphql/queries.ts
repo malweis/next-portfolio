@@ -35,7 +35,7 @@ const GET_PROJECT_BY_SLUG = gql`
 
 const GET_ALL_PROJECTS = gql`
   query {
-    proyectos {
+    proyectos (pagination: { start: 0, limit: 15 }) {
       data {
         attributes {
           titulo
