@@ -31,13 +31,18 @@ export const ProyectCard = ({ gridLayout, proyecto }: ProyectCardProps) => {
   const cardHeightClass = gridLayout ? 'h-full' : 'h-64';
   const changeFlexClass = gridLayout ? 'flex-col' : '';
  
+  
 
+
+  const backgroundImageURL = proyecto.attributes.pageShow?.data?.[0]?.attributes?.url;
+  const backgroundImage = backgroundImageURL ? `bg-[url('localhost:1337${backgroundImageURL}')]` : 'bg-primary';
+                    
 
   return (
     <div
     
 
-      className={`relative bg-[url('../public/proyectos/proyecto1.png')] bg-cover bg-no-repeat bg-bottom ${cardHeightClass} w-full rounded-lg shadow-lg hover:shadow-2xl transition duration-500 ease-in-out transform hover:-translate-y-1 hover:scale-110`}
+      className={`relative ${backgroundImage} bg-cover bg-no-repeat bg-bottom ${cardHeightClass} w-full rounded-lg shadow-lg hover:shadow-2xl transition duration-500 ease-in-out transform hover:-translate-y-1 hover:scale-110`}
       onMouseEnter={toggleDescription}
       onMouseLeave={toggleDescription}
     >
