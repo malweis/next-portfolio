@@ -41,7 +41,7 @@ export const ProyectCard = ({ gridLayout, proyecto }: ProyectCardProps) => {
     <div
     
       style={backgroundImageURL ? { backgroundImage: `url('http://localhost:1337${backgroundImageURL}')` } : {}}
-      className={`relative bg-cover bg-no-repeat bg-bottom ${cardHeightClass} w-full rounded-lg shadow-lg hover:shadow-2xl transition duration-500 ease-in-out transform hover:-translate-y-1 hover:scale-110`}
+      className={`relative bg-cover bg-no-repeat bg-bottom ${cardHeightClass} w-full rounded-lg shadow-lg hover:shadow-2xl transition duration-500 ease-in-out transform hover:-translate-y-1 hover:z-50 hover:scale-110`}
       onMouseEnter={toggleDescription}
       onMouseLeave={toggleDescription}
     >
