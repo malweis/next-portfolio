@@ -28,7 +28,10 @@ export default function Proyects() {
   useEffect(() => {
     async function fetchData() {
       const client = new ApolloClient({
-        uri: "http://localhost:1337/graphql",
+        uri: "http://localhost:1337/graphql?populate=*",
+        headers: {
+          Authorization: `Bearer ${process.env.NEXT_PUBLIC_API_TOKEN_STRAPI}`,
+        },
         cache: new InMemoryCache(),
       });
       const { data } = await client.query({

@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useEffect, useState } from 'react';
 import { Button } from './ui/button';
 
 interface Proyecto {
@@ -35,14 +35,13 @@ export const ProyectCard = ({ gridLayout, proyecto }: ProyectCardProps) => {
 
 
   const backgroundImageURL = proyecto.attributes.pageShow?.data?.[0]?.attributes?.url;
-  const backgroundImage = backgroundImageURL ? `bg-[url('localhost:1337${backgroundImageURL}')]` : 'bg-primary';
-                    
+ 
 
   return (
     <div
     
-
-      className={`relative ${backgroundImage} bg-cover bg-no-repeat bg-bottom ${cardHeightClass} w-full rounded-lg shadow-lg hover:shadow-2xl transition duration-500 ease-in-out transform hover:-translate-y-1 hover:scale-110`}
+      style={backgroundImageURL ? { backgroundImage: `url('http://localhost:1337${backgroundImageURL}')` } : {}}
+      className={`relative bg-cover bg-no-repeat bg-bottom ${cardHeightClass} w-full rounded-lg shadow-lg hover:shadow-2xl transition duration-500 ease-in-out transform hover:-translate-y-1 hover:scale-110`}
       onMouseEnter={toggleDescription}
       onMouseLeave={toggleDescription}
     >
